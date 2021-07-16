@@ -39,6 +39,7 @@ class Bug extends Dbh{
         $sql = 'SELECT * FROM bugs_tb WHERE bug_id =?';
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$bugId]);
+        return $stmt->fetchAll();
     }
         // Update
     protected function editBug() {

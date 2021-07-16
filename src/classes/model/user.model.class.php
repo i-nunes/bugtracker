@@ -27,6 +27,7 @@ class User extends Dbh {
         $sql = 'SELECT * FROM users_tb WHERE user_id =?';
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$userId]);
+        return $stmt->fetchAll();
     }
         // Update
     protected function editUser() {

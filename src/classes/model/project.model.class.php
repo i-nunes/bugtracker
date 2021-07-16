@@ -23,6 +23,7 @@ class Project extends Dbh {
         $sql = 'SELECT * FROM projects_tb WHERE project_id =?';
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$projectId]);
+        return $stmt->fetchAll();
     }
         // Update
     protected function editProject() {

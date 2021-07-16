@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Inunes\\Bugtrack\\' => array($baseDir . '/src'),
+    'classes\\controller\\' => array($baseDir . '/src'),
+    'classes\\view\\' => array($baseDir . '/src')
 );

@@ -2,7 +2,8 @@
     "name": "inunes/bugtrack",
     "autoload": {
         "psr-4": {
-            "Inunes\\Bugtrack\\": "src/"
+            "classes\\controller\\": "src/",
+            "classes\\view\\": "src/"
         }
     },
     "authors": [
