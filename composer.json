@@ -1,0 +1,15 @@
+{
+    "name": "inunes/bugtrack",
+    "autoload": {
+        "psr-4": {
+            "Inunes\\Bugtrack\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Iuri Nunes",
+            "email": "inunes@2mundos.net"
+        }
+    ],
+    "require": {}
+}
